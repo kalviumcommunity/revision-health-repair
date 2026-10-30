@@ -1,0 +1,3 @@
+# Supplied hypothetical Cloud Run record
+
+Service parcelstatus; region us-central1. Known-good revision parcelstatus-00001-good; candidate parcelstatus-00002-bad. Candidate not Ready; supplied startup error names missing.py. These are teaching fixtures, not actual cloud observations. Local image tags parcelstatus:broken and parcelstatus:fixed are not deployed Cloud Run revisions. If production candidate fails, proposed rollback directs 100% traffic to known-good revision. After proposed rollback inspect readiness/logs and call actual service /health URL. Do not execute cloud commands. This exercise creates only local Docker containers.
